@@ -82,4 +82,9 @@
   </div>
 
   <app-footer />
+  <app-fixbar
+    (onCollapse)="commonService.onCollapseAll()"
+    [collapsed]="commonService.collapsed"
+    selector=".main"
+  />
 </section>
